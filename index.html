@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IDEP 2025</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo do Curso Técnico em Informática" class="logo" />
+    <h1><i class="fas fa-school"></i> IDEP 2025</h1>
+    <p>Conectando ideias, pessoas e aprendizado</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2><i class="fas fa-bullhorn"></i> Mural de Recados</h2>
+      <ul id="lista-recados">
+        <li>Bem-vindos ao IDEP 2025!</li>
+      </ul>
+      <div class="form-recado">
+        <input type="text" id="novo-recado" placeholder="Digite um recado..." />
+        <button onclick="adicionarRecado()"><i class="fas fa-paper-plane"></i> Postar</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-link"></i> Links Úteis</h2>
+      <ul>
+        <li><a href="https://classroom.google.com" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Google Classroom</a></li>
+        <li><a href="#"><i class="fas fa-folder-open"></i> Drive da Turma</a></li>
+        <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendário de Provas</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><i class="fas fa-users"></i> Equipe</h2>
+      <ul>
+        <li><i class="fas fa-user-tie"></i> Prof. Ana – Matemática</li>
+        <li><i class="fas fa-user-tie"></i> Prof. João – Português</li>
+        <li><i class="fas fa-user-graduate"></i> Aluno(a): Maria Silva</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 IDEP – Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
