@@ -1,32 +1,28 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendário de Provas</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Calendário Escolar</title>
 </head>
 <body>
-  <header>
-    <a href="index.html" class="voltar"><i class="fas fa-arrow-left"></i> Voltar</a>
-    <h1><i class="fas fa-calendar-alt"></i> Calendário de Provas</h1>
-  </header>
 
-  <main>
-    <section class="card">
-      <ul>
-        <li><strong>Matemática:</strong> 10 de Maio</li>
-        <li><strong>Português:</strong> 13 de Maio</li>
-        <li><strong>História:</strong> 17 de Maio</li>
-        <li><strong>Informática:</strong> 20 de Maio</li>
-      </ul>
-    </section>
-  </main>
+<script>
+  if (localStorage.getItem('logado') !== 'sim') {
+    alert('Você precisa fazer login primeiro.');
+    window.location.href = 'login.html';
+  }
+</script>
 
-  <footer>
-    <p>&copy; 2025 Conecta Sala</p>
-  </footer>
+  <h1>Calendário de Atividades</h1>
+  <p>🗓️ Maio: Provas finais do 1º bimestre.</p>
+  <p>🗓️ Junho: Semana de projetos interdisciplinares.</p>
+  <button onclick="logout()">Sair</button>
+  <script>
+    function logout() {
+      localStorage.removeItem('logado');
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>

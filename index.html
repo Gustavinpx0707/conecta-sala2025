@@ -1,33 +1,26 @@
 
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conecta Sala 2025</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Index - Conecta Sala</title>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo" class="logo">
-    <h1><i class="fas fa-school"></i> Conecta Sala 2025</h1>
-    <p>Seu espaço de aprendizado conectado</p>
-  </header>
 
-  <main>
-    <section class="card">
-      <h2><i class="fas fa-link"></i> Links Úteis</h2>
-      <ul>
-        <li><a href="https://classroom.google.com" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Google Classroom</a></li>
-        <li><a href="calendario.html"><i class="fas fa-calendar-alt"></i> Calendário de Provas</a></li>
-        <li><a href="mural.html"><i class="fas fa-comments"></i> Mural da Turma</a></li>
-      </ul>
-    </section>
-  </main>
+<script>
+  if (localStorage.getItem('logado') !== 'sim') {
+    alert('Você precisa fazer login primeiro.');
+    window.location.href = 'login.html';
+  }
+</script>
 
-  <footer>
-    <p>&copy; 2025 Conecta Sala – Todos os direitos reservados.</p>
-  </footer>
+  <h1>Bem-vindo à página inicial!</h1>
+  <button onclick="logout()">Sair</button>
+  <script>
+    function logout() {
+      localStorage.removeItem('logado');
+      window.location.href = 'login.html';
+    }
+  </script>
 </body>
 </html>
