@@ -1,57 +1,33 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Conecta Sala - Início</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f9;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      flex-direction: column;
-    }
-    h1 {
-      color: #333;
-    }
-    button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #e63946;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #d62828;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conecta Sala 2025</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <h1><i class="fas fa-school"></i> Conecta Sala 2025</h1>
+    <p>Seu espaço de aprendizado conectado</p>
+  </header>
 
-<script>
-  if (localStorage.getItem('logado') !== 'sim') {
-    alert('Você precisa fazer login primeiro.');
-    window.location.href = 'login.html';
-  }
-</script>
+  <main>
+    <section class="card">
+      <h2><i class="fas fa-link"></i> Links Úteis</h2>
+      <ul>
+        <li><a href="https://classroom.google.com" target="_blank"><i class="fas fa-chalkboard-teacher"></i> Google Classroom</a></li>
+        <li><a href="calendario.html"><i class="fas fa-calendar-alt"></i> Calendário de Provas</a></li>
+        <li><a href="mural.html"><i class="fas fa-comments"></i> Mural da Turma</a></li>
+      </ul>
+    </section>
+  </main>
 
-<h1>🎉 Bem-vindo ao Conecta Sala 2025!</h1>
-<p>Você está logado com sucesso. Explore o mural ou o calendário escolar.</p>
-
-<button onclick="logout()">Sair</button>
-
-<script>
-  function logout() {
-    localStorage.removeItem('logado');
-    window.location.href = 'login.html';
-  }
-</script>
-
+  <footer>
+    <p>&copy; 2025 Conecta Sala – Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
