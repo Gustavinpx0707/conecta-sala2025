@@ -1,9 +1,36 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Index - Conecta Sala</title>
+  <title>Conecta Sala - Início</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+    h1 {
+      color: #333;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d62828;
+    }
+  </style>
 </head>
 <body>
 
@@ -14,13 +41,17 @@
   }
 </script>
 
-  <h1>Bem-vindo à página inicial!</h1>
-  <button onclick="logout()">Sair</button>
-  <script>
-    function logout() {
-      localStorage.removeItem('logado');
-      window.location.href = 'login.html';
-    }
-  </script>
+<h1>🎉 Bem-vindo ao Conecta Sala 2025!</h1>
+<p>Você está logado com sucesso. Explore o mural ou o calendário escolar.</p>
+
+<button onclick="logout()">Sair</button>
+
+<script>
+  function logout() {
+    localStorage.removeItem('logado');
+    window.location.href = 'login.html';
+  }
+</script>
+
 </body>
 </html>

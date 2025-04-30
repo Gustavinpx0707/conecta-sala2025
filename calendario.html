@@ -1,12 +1,31 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Calendário Escolar</title>
+    <meta charset="UTF-8">
+    <title>Calendário Escolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fefefe;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            background-color: #dff9fb;
+            padding: 10px;
+            margin: 8px 0;
+            border-left: 5px solid #0984e3;
+            border-radius: 4px;
+        }
+    </style>
 </head>
 <body>
-
 <script>
   if (localStorage.getItem('logado') !== 'sim') {
     alert('Você precisa fazer login primeiro.');
@@ -14,15 +33,20 @@
   }
 </script>
 
-  <h1>Calendário de Atividades</h1>
-  <p>🗓️ Maio: Provas finais do 1º bimestre.</p>
-  <p>🗓️ Junho: Semana de projetos interdisciplinares.</p>
-  <button onclick="logout()">Sair</button>
-  <script>
-    function logout() {
-      localStorage.removeItem('logado');
-      window.location.href = 'login.html';
-    }
-  </script>
+    <h1>Calendário Escolar</h1>
+    <ul>
+        <li>01/05 - Feriado: Dia do Trabalhador</li>
+        <li>10/06 - Festa Junina</li>
+        <li>20/06 - Prova Final de História</li>
+    </ul>
+
+    <button onclick="logout()">Sair</button>
+
+    <script>
+      function logout() {
+        localStorage.removeItem('logado');
+        window.location.href = 'login.html';
+      }
+    </script>
 </body>
 </html>
